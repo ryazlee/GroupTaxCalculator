@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: ("endEditing:")))
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: (#selector(UIView.endEditing(_:)))))
     }
     
     func dismissKeyboard() {
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         // if let value = totalText.text {simpleLabel.text = value.uppercased()}
        
         if let value = totalText.text{
-            var temp = Double(value);
+            let temp = Double(value);
             if temp != nil {
                 total = Double(value)!;
             } else{
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     
     @IBAction func changeTextTax(_ sender: Any) {
         if let value = taxText.text{
-            var temp = Double(value);
+            let temp = Double(value);
             if temp != nil {
                 tax = Double(value)!/100;
             } else {
@@ -59,6 +59,7 @@ class ViewController: UIViewController {
             outputLabel.text = "$" + String(0);
         }
     }
+    
     
     @IBOutlet weak var atLabel: UILabel!
     @IBOutlet weak var outputLabel: UILabel!
