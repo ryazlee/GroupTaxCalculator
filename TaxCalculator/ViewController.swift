@@ -14,12 +14,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     @IBAction func changeTextTotal(_ sender: Any) {
@@ -28,8 +27,11 @@ class ViewController: UIViewController {
         if let value = totalText.text{
             if value != nil && value != "" && value != "."{
                 total = Double(value)!;
-                toalLabel.text = "$" + value + " + ";
+            } else{
+                total = 0;
             }
+            totalLabel.text = "$" + String(total);
+            
         }
     }
     
@@ -37,19 +39,23 @@ class ViewController: UIViewController {
         if let value = taxText.text{
             if value != nil && value != "" && value != "."{
                 tax = Double(value)!/100;
-                taxLabel.text = value + "%";
+            } else {
+                tax = 0;
             }
+            taxLabel.text = String(tax*100) + "%";
+            atLabel.text = "at";
         }
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
         outputLabel.text = "$" + String(total * (1 + tax));
     }
-
+    
+    @IBOutlet weak var atLabel: UILabel!
     @IBOutlet weak var outputLabel: UILabel!
     @IBOutlet weak var taxLabel: UILabel!
     @IBOutlet weak var taxText: UITextField!
     @IBOutlet weak var totalText: UITextField!
-    @IBOutlet weak var toalLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
 }
 
