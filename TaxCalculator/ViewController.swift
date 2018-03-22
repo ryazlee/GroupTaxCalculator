@@ -24,8 +24,10 @@ class ViewController: UIViewController {
     @IBAction func changeTextTotal(_ sender: Any) {
         // Use "if let" to get string from text field.
         // if let value = totalText.text {simpleLabel.text = value.uppercased()}
+       
         if let value = totalText.text{
-            if value != nil && value != "" && value != "."{
+            var temp = Double(value);
+            if temp != nil {
                 total = Double(value)!;
             } else{
                 total = 0;
@@ -37,7 +39,8 @@ class ViewController: UIViewController {
     
     @IBAction func changeTextTax(_ sender: Any) {
         if let value = taxText.text{
-            if value != nil && value != "" && value != "."{
+            var temp = Double(value);
+            if temp != nil {
                 tax = Double(value)!/100;
             } else {
                 tax = 0;
