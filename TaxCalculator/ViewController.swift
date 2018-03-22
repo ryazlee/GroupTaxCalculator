@@ -60,7 +60,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
     @IBOutlet weak var atLabel: UILabel!
     @IBOutlet weak var outputLabel: UILabel!
     @IBOutlet weak var taxLabel: UILabel!
@@ -68,4 +67,5 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalText: UITextField!
     @IBOutlet weak var totalLabel: UILabel!
 }
+
 

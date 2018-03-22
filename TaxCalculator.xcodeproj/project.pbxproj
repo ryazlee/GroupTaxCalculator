@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		9449DE9B20634DC600DEE72B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449DE9A20634DC600DEE72B /* AppDelegate.swift */; };
 		9449DE9D20634DC600DEE72B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449DE9C20634DC600DEE72B /* ViewController.swift */; };
-		9449DEA020634DC600DEE72B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9449DE9E20634DC600DEE72B /* Main.storyboard */; };
 		9449DEA220634DC600DEE72B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9449DEA120634DC600DEE72B /* Assets.xcassets */; };
-		9449DEA520634DC600DEE72B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9449DEA320634DC600DEE72B /* LaunchScreen.storyboard */; };
 		9449DEB020634DC600DEE72B /* TaxCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449DEAF20634DC600DEE72B /* TaxCalculatorTests.swift */; };
 		9449DEBB20634DC600DEE72B /* TaxCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449DEBA20634DC600DEE72B /* TaxCalculatorUITests.swift */; };
+		94D7635E20645EBA00601EC3 /* GroupTaxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7635D20645EBA00601EC3 /* GroupTaxController.swift */; };
+		94D76362206460F400601EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D76361206460F400601EC3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +37,7 @@
 		9449DE9720634DC600DEE72B /* TaxCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9449DE9A20634DC600DEE72B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9449DE9C20634DC600DEE72B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9449DE9F20634DC600DEE72B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9449DEA120634DC600DEE72B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9449DEA420634DC600DEE72B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9449DEA620634DC600DEE72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9449DEAB20634DC600DEE72B /* TaxCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9449DEAF20634DC600DEE72B /* TaxCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCalculatorTests.swift; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		9449DEB620634DC600DEE72B /* TaxCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9449DEBA20634DC600DEE72B /* TaxCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCalculatorUITests.swift; sourceTree = "<group>"; };
 		9449DEBC20634DC600DEE72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D7635D20645EBA00601EC3 /* GroupTaxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTaxController.swift; sourceTree = "<group>"; };
+		94D76361206460F400601EC3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,9 @@
 			children = (
 				9449DE9A20634DC600DEE72B /* AppDelegate.swift */,
 				9449DE9C20634DC600DEE72B /* ViewController.swift */,
-				9449DE9E20634DC600DEE72B /* Main.storyboard */,
+				94D7635D20645EBA00601EC3 /* GroupTaxController.swift */,
+				94D76361206460F400601EC3 /* Main.storyboard */,
 				9449DEA120634DC600DEE72B /* Assets.xcassets */,
-				9449DEA320634DC600DEE72B /* LaunchScreen.storyboard */,
 				9449DEA620634DC600DEE72B /* Info.plist */,
 			);
 			path = TaxCalculator;
@@ -232,9 +232,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9449DEA520634DC600DEE72B /* LaunchScreen.storyboard in Resources */,
+				94D76362206460F400601EC3 /* Main.storyboard in Resources */,
 				9449DEA220634DC600DEE72B /* Assets.xcassets in Resources */,
-				9449DEA020634DC600DEE72B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D7635E20645EBA00601EC3 /* GroupTaxController.swift in Sources */,
 				9449DE9D20634DC600DEE72B /* ViewController.swift in Sources */,
 				9449DE9B20634DC600DEE72B /* AppDelegate.swift in Sources */,
 			);
@@ -294,25 +294,6 @@
 			targetProxy = 9449DEB720634DC600DEE72B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9449DE9E20634DC600DEE72B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9449DE9F20634DC600DEE72B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9449DEA320634DC600DEE72B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9449DEA420634DC600DEE72B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9449DEBD20634DC600DEE72B /* Debug */ = {
