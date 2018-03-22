@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: ("endEditing:")))
     }
     
     func dismissKeyboard() {
@@ -51,7 +52,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
-        outputLabel.text = "$" + String(total * (1 + tax));
+        self.view.endEditing(true)
+        if tax != 0{
+            outputLabel.text = "$" + String(total * (1 + tax));
+        }else{
+            outputLabel.text = "$" + String(0);
+        }
     }
     
     @IBOutlet weak var atLabel: UILabel!

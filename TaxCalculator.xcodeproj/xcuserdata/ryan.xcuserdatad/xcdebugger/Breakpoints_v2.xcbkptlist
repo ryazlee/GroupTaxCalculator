@@ -10,11 +10,73 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TaxCalculator/ViewController.swift"
-            timestampString = "543395634.183156"
+            timestampString = "543397516.148923"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65">
+            startingLineNumber = "71"
+            endingLineNumber = "71">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TaxCalculator.ViewController.totalText.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "TaxCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryan/Documents/projects/GroupTaxCalculator/TaxCalculator/ViewController.swift"
+                  timestampString = "543397516.775612"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TaxCalculator.ViewController.totalText.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "TaxCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryan/Documents/projects/GroupTaxCalculator/TaxCalculator/ViewController.swift"
+                  timestampString = "543397516.77791"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TaxCalculator.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; TaxCalculator.ViewController"
+                  moduleName = "TaxCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryan/Documents/projects/GroupTaxCalculator/TaxCalculator/ViewController.swift"
+                  timestampString = "543397516.779946"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "785">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TaxCalculator.ViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;TaxCalculator.ViewController&gt;"
+                  moduleName = "TaxCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryan/Documents/projects/GroupTaxCalculator/TaxCalculator/ViewController.swift"
+                  timestampString = "543397516.781859"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "681">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
