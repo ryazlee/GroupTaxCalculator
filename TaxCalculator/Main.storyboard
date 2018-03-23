@@ -451,10 +451,6 @@
                                 <rect key="frame" x="62" y="115" width="237" height="261"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93Q-eL-RQC">
-                                <rect key="frame" x="60" y="419" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Bsl-rC-Rlu"/>
@@ -470,7 +466,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Fic-TG-GD0"/>
-        <segue reference="7Ah-WQ-8Uc"/>
-        <segue reference="wx9-p0-gtA"/>
+        <segue reference="nya-u0-hAU"/>
+        <segue reference="W2D-kb-5h9"/>
     </inferredMetricsTieBreakers>
 </document>
