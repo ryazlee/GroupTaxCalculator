@@ -11,6 +11,7 @@ import UIKit
 class GroupTaxController: UIViewController {
     var total = 0.0;
     var tax = 0.0;
+    var tip = 0.0;
     var totalTax = 0.0;
     var value1 = 0.0;
     var value2 = 0.0;
@@ -120,7 +121,15 @@ class GroupTaxController: UIViewController {
         total7.text = "$" + String(format: "%.2f", Double(value7/total) * totalTax + value7);
         total8.text = "$" + String(format: "%.2f", Double(value8/total) * totalTax + value8);
         
-        
+    }
+    
+    @IBAction func tipChanged(_ sender: Any) {
+        if let value = tipAmount.text{
+            let temp = Double(value);
+            if temp != nil {
+                tip = Double(value)!;
+            }
+        }
     }
     
     @IBOutlet weak var taxAmount: UITextField!
@@ -132,6 +141,7 @@ class GroupTaxController: UIViewController {
     @IBOutlet weak var amount6: UITextField!
     @IBOutlet weak var amount7: UITextField!
     @IBOutlet weak var amount8: UITextField!
+    @IBOutlet weak var tipAmount: UITextField!
     
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var total1: UILabel!
