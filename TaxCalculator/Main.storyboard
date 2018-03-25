@@ -18,7 +18,7 @@
         <!--SingleTaxCalculator-->
         <scene sceneID="4is-Rs-iS3">
             <objects>
-                <viewController id="f8n-9h-vn2" userLabel="SingleTaxCalculator" customClass="ViewController" customModule="TaxCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f8n-9h-vn2" userLabel="SingleTaxCalculator" customClass="ViewController" customModule="GroupPaymentCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ED-3C-b1W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,7 @@
         <!--GroupTaxCalculator-->
         <scene sceneID="jee-d1-Vvi">
             <objects>
-                <viewController title="GroupTaxController" id="G8p-ob-g10" userLabel="GroupTaxCalculator" customClass="GroupTaxController" customModule="TaxCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="GroupTaxController" id="G8p-ob-g10" userLabel="GroupTaxCalculator" customClass="GroupTaxController" customModule="GroupPaymentCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ot1-zj-yve">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -407,8 +407,8 @@
                                     <action selector="tipChanged:" destination="G8p-ob-g10" eventType="editingChanged" id="vVt-Sy-7gr"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WM5-UR-fRc" userLabel="Tip">
-                                <rect key="frame" x="192" y="527" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip %:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WM5-UR-fRc" userLabel="Tip">
+                                <rect key="frame" x="192" y="527" width="47" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -424,8 +424,8 @@
                                     <action selector="taxChanged:" destination="G8p-ob-g10" eventType="editingChanged" id="uIw-ei-n9Z"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tax:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTg-AH-GrK" userLabel="Tax">
-                                <rect key="frame" x="32" y="526" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tax %:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTg-AH-GrK" userLabel="Tax">
+                                <rect key="frame" x="32" y="526" width="49" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

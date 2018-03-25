@@ -142,13 +142,13 @@ class GroupTaxController: UIViewController {
         }
         
         if tax != 0 && tip != 0{
-            totalLabel.text = "$" + String(total + (total * tax) + tip);
+            totalLabel.text = "$" + String(format: "%.2f", total + (total * tax) + tip);
         } else if tax == 0 && tip == 0{
-            totalLabel.text = "$" + String(total);
+            totalLabel.text = "$" + String(format: "%.2f",total);
         } else if tax != 0 && tip == 0{
-            totalLabel.text = "$" + String(total * (1+tax));
+            totalLabel.text = "$" + String(format: "%.2f", total * (1+tax));
         } else{
-            totalLabel.text = "$" + String(total + tip);
+            totalLabel.text = "$" + String(format: "%.2f", total + tip);
         }
         totalTax = total * (tax);
         

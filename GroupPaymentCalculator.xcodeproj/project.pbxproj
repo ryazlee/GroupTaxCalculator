@@ -34,15 +34,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9449DE9720634DC600DEE72B /* TaxCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9449DE9720634DC600DEE72B /* GroupPaymentCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupPaymentCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9449DE9A20634DC600DEE72B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9449DE9C20634DC600DEE72B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9449DEA120634DC600DEE72B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9449DEA620634DC600DEE72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9449DEAB20634DC600DEE72B /* TaxCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9449DEAB20634DC600DEE72B /* GroupPaymentCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupPaymentCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9449DEAF20634DC600DEE72B /* TaxCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCalculatorTests.swift; sourceTree = "<group>"; };
 		9449DEB120634DC600DEE72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9449DEB620634DC600DEE72B /* TaxCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9449DEB620634DC600DEE72B /* GroupPaymentCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupPaymentCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9449DEBA20634DC600DEE72B /* TaxCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCalculatorUITests.swift; sourceTree = "<group>"; };
 		9449DEBC20634DC600DEE72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94D7635D20645EBA00601EC3 /* GroupTaxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTaxController.swift; sourceTree = "<group>"; };
@@ -87,9 +87,9 @@
 		9449DE9820634DC600DEE72B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9449DE9720634DC600DEE72B /* TaxCalculator.app */,
-				9449DEAB20634DC600DEE72B /* TaxCalculatorTests.xctest */,
-				9449DEB620634DC600DEE72B /* TaxCalculatorUITests.xctest */,
+				9449DE9720634DC600DEE72B /* GroupPaymentCalculator.app */,
+				9449DEAB20634DC600DEE72B /* GroupPaymentCalculatorTests.xctest */,
+				9449DEB620634DC600DEE72B /* GroupPaymentCalculatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9449DE9620634DC600DEE72B /* TaxCalculator */ = {
+		9449DE9620634DC600DEE72B /* GroupPaymentCalculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9449DEBF20634DC600DEE72B /* Build configuration list for PBXNativeTarget "TaxCalculator" */;
+			buildConfigurationList = 9449DEBF20634DC600DEE72B /* Build configuration list for PBXNativeTarget "GroupPaymentCalculator" */;
 			buildPhases = (
 				9449DE9320634DC600DEE72B /* Sources */,
 				9449DE9420634DC600DEE72B /* Frameworks */,
@@ -140,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = TaxCalculator;
+			name = GroupPaymentCalculator;
 			productName = TaxCalculator;
-			productReference = 9449DE9720634DC600DEE72B /* TaxCalculator.app */;
+			productReference = 9449DE9720634DC600DEE72B /* GroupPaymentCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9449DEAA20634DC600DEE72B /* TaxCalculatorTests */ = {
+		9449DEAA20634DC600DEE72B /* GroupPaymentCalculatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9449DEC220634DC600DEE72B /* Build configuration list for PBXNativeTarget "TaxCalculatorTests" */;
+			buildConfigurationList = 9449DEC220634DC600DEE72B /* Build configuration list for PBXNativeTarget "GroupPaymentCalculatorTests" */;
 			buildPhases = (
 				9449DEA720634DC600DEE72B /* Sources */,
 				9449DEA820634DC600DEE72B /* Frameworks */,
@@ -158,14 +158,14 @@
 			dependencies = (
 				9449DEAD20634DC600DEE72B /* PBXTargetDependency */,
 			);
-			name = TaxCalculatorTests;
+			name = GroupPaymentCalculatorTests;
 			productName = TaxCalculatorTests;
-			productReference = 9449DEAB20634DC600DEE72B /* TaxCalculatorTests.xctest */;
+			productReference = 9449DEAB20634DC600DEE72B /* GroupPaymentCalculatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9449DEB520634DC600DEE72B /* TaxCalculatorUITests */ = {
+		9449DEB520634DC600DEE72B /* GroupPaymentCalculatorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9449DEC520634DC600DEE72B /* Build configuration list for PBXNativeTarget "TaxCalculatorUITests" */;
+			buildConfigurationList = 9449DEC520634DC600DEE72B /* Build configuration list for PBXNativeTarget "GroupPaymentCalculatorUITests" */;
 			buildPhases = (
 				9449DEB220634DC600DEE72B /* Sources */,
 				9449DEB320634DC600DEE72B /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				9449DEB820634DC600DEE72B /* PBXTargetDependency */,
 			);
-			name = TaxCalculatorUITests;
+			name = GroupPaymentCalculatorUITests;
 			productName = TaxCalculatorUITests;
-			productReference = 9449DEB620634DC600DEE72B /* TaxCalculatorUITests.xctest */;
+			productReference = 9449DEB620634DC600DEE72B /* GroupPaymentCalculatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9449DE9220634DC600DEE72B /* Build configuration list for PBXProject "TaxCalculator" */;
+			buildConfigurationList = 9449DE9220634DC600DEE72B /* Build configuration list for PBXProject "GroupPaymentCalculator" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,9 +220,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9449DE9620634DC600DEE72B /* TaxCalculator */,
-				9449DEAA20634DC600DEE72B /* TaxCalculatorTests */,
-				9449DEB520634DC600DEE72B /* TaxCalculatorUITests */,
+				9449DE9620634DC600DEE72B /* GroupPaymentCalculator */,
+				9449DEAA20634DC600DEE72B /* GroupPaymentCalculatorTests */,
+				9449DEB520634DC600DEE72B /* GroupPaymentCalculatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,12 +285,12 @@
 /* Begin PBXTargetDependency section */
 		9449DEAD20634DC600DEE72B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9449DE9620634DC600DEE72B /* TaxCalculator */;
+			target = 9449DE9620634DC600DEE72B /* GroupPaymentCalculator */;
 			targetProxy = 9449DEAC20634DC600DEE72B /* PBXContainerItemProxy */;
 		};
 		9449DEB820634DC600DEE72B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9449DE9620634DC600DEE72B /* TaxCalculator */;
+			target = 9449DE9620634DC600DEE72B /* GroupPaymentCalculator */;
 			targetProxy = 9449DEB720634DC600DEE72B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -445,7 +445,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaxCalculator.app/TaxCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupPaymentCalculator.app/GroupPaymentCalculator";
 			};
 			name = Debug;
 		};
@@ -461,7 +461,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaxCalculator.app/TaxCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupPaymentCalculator.app/GroupPaymentCalculator";
 			};
 			name = Release;
 		};
@@ -498,7 +498,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9449DE9220634DC600DEE72B /* Build configuration list for PBXProject "TaxCalculator" */ = {
+		9449DE9220634DC600DEE72B /* Build configuration list for PBXProject "GroupPaymentCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9449DEBD20634DC600DEE72B /* Debug */,
@@ -507,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9449DEBF20634DC600DEE72B /* Build configuration list for PBXNativeTarget "TaxCalculator" */ = {
+		9449DEBF20634DC600DEE72B /* Build configuration list for PBXNativeTarget "GroupPaymentCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9449DEC020634DC600DEE72B /* Debug */,
@@ -516,7 +516,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9449DEC220634DC600DEE72B /* Build configuration list for PBXNativeTarget "TaxCalculatorTests" */ = {
+		9449DEC220634DC600DEE72B /* Build configuration list for PBXNativeTarget "GroupPaymentCalculatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9449DEC320634DC600DEE72B /* Debug */,
@@ -525,7 +525,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9449DEC520634DC600DEE72B /* Build configuration list for PBXNativeTarget "TaxCalculatorUITests" */ = {
+		9449DEC520634DC600DEE72B /* Build configuration list for PBXNativeTarget "GroupPaymentCalculatorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9449DEC620634DC600DEE72B /* Debug */,
