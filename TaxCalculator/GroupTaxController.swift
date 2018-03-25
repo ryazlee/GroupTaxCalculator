@@ -38,15 +38,14 @@ class GroupTaxController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func tipChanged(_ sender: Any) {
+        total = 0.0;
+        tip = 0.0;
+    }
     
     @IBAction func taxChanged(_ sender: Any) {
-        tax = 0.0
-        if let value = taxAmount.text{
-            let temp = Double(value);
-            if temp != nil {
-                tax = Double(value)!/100;
-            }
-        }
+        total = 0.0;
+        tax = 0.0;
     }
     
     @IBAction func calculate(_ sender: Any) {
@@ -127,8 +126,27 @@ class GroupTaxController: UIViewController {
         }
         
         total = value1 + value2 + value3 + value4 + value5 + value6 + value7 + value8;
-        if tax != 0 {
-            totalLabel.text = "$" + String(total * (1+tax) + tip);
+        
+        if let value = taxAmount.text{
+            let temp = Double(value);
+            if temp != nil {
+                tax = temp!/100;
+            }
+        }
+        
+        if let value = tipAmount.text{
+            let temp = Double(value);
+            if temp != nil {
+                tip = total * temp!/100;
+            }
+        }
+        
+        if tax != 0 && tip != 0{
+            totalLabel.text = "$" + String(total + (total * tax) + tip);
+        } else if tax == 0 && tip == 0{
+            totalLabel.text = "$" + String(total);
+        } else if tax != 0 && tip == 0{
+            totalLabel.text = "$" + String(total * (1+tax));
         } else{
             totalLabel.text = "$" + String(total + tip);
         }
@@ -164,15 +182,6 @@ class GroupTaxController: UIViewController {
         
         if value8 != 0.0 {
             total8.text = "$" + String(format: "%.2f", Double(value8/total) * totalTax + value8 + tip/numPeople);
-        }
-    }
-    
-    @IBAction func tipChanged(_ sender: Any) {
-        if let value = tipAmount.text{
-            let temp = Double(value);
-            if temp != nil {
-                tip = Double(value)!;
-            }
         }
     }
     
