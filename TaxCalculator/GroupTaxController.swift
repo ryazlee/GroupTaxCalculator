@@ -49,19 +49,20 @@ class GroupTaxController: UIViewController {
     }
     
     @IBAction func calculate(_ sender: Any) {
-        var total = 0.0;
-        var numPeople = 0.0;
-        var totalTax = 0.0;
-        var value1 = 0.0;
-        var value2 = 0.0;
-        var value3 = 0.0;
-        var value4 = 0.0;
-        var value5 = 0.0;
-        var value6 = 0.0;
-        var value7 = 0.0;
-        var value8 = 0.0;
+        total = 0.0;
+        numPeople = 0.0;
+        totalTax = 0.0;
+        value1 = 0.0;
+        value2 = 0.0;
+        value3 = 0.0;
+        value4 = 0.0;
+        value5 = 0.0;
+        value6 = 0.0;
+        value7 = 0.0;
+        value8 = 0.0;
         
         if let value = amount1.text{
+            value1 = 0.0;
             let temp = Double(value);
             if temp != nil && temp != 0.0 {
                 value1 = temp!;
@@ -70,6 +71,7 @@ class GroupTaxController: UIViewController {
         }
         
         if let value = amount2.text{
+            value2 = 0.0;
             let temp = Double(value);
             if temp != nil && temp != 0.0 {
                 value2 = temp!;
@@ -78,6 +80,7 @@ class GroupTaxController: UIViewController {
         }
         
         if let value = amount3.text{
+            value3 = 0.0;
             let temp = Double(value);
             if temp != nil && temp != 0.0 {
                 value3 = temp!;
@@ -86,6 +89,7 @@ class GroupTaxController: UIViewController {
         }
         
         if let value = amount4.text{
+            value4 = 0.0;
             let temp = Double(value);
             if temp != nil && temp != 0.0 {
                 value4 = temp!;
@@ -94,6 +98,7 @@ class GroupTaxController: UIViewController {
         }
         
         if let value = amount5.text{
+            value5 = 0.0;
             let temp = Double(value);
             if temp != nil && temp != 0.0 {
                 value5 = temp!;
@@ -102,6 +107,7 @@ class GroupTaxController: UIViewController {
         }
         
         if let value = amount6.text{
+            value6 = 0.0;
             let temp = Double(value);
             if temp != nil && temp != 0.0 {
                 value6 = temp!;
@@ -110,6 +116,7 @@ class GroupTaxController: UIViewController {
         }
         
         if let value = amount7.text{
+            value7 = 0.0;
             let temp = Double(value);
             if temp != nil && temp != 0.0 {
                 value7 = temp!;
@@ -118,6 +125,7 @@ class GroupTaxController: UIViewController {
         }
         
         if let value = amount8.text{
+            value8 = 0.0;
             let temp = Double(value);
             if temp != nil && temp != 0.0 {
                 value8 = temp!;
@@ -154,34 +162,50 @@ class GroupTaxController: UIViewController {
         
         if value1 != 0.0 {
             total1.text = "$" + String(format: "%.2f", Double(value1/total) * totalTax + value1 + tip/numPeople);
+        } else {
+            total1.text = "$" + String(0.00);
         }
         
         if value2 != 0.0 {
             total2.text = "$" + String(format: "%.2f", Double(value2/total) * totalTax + value2 + tip/numPeople);
+        } else {
+            total2.text = "$" + String(0.00);
         }
         
         if value3 != 0.0 {
             total3.text = "$" + String(format: "%.2f", Double(value3/total) * totalTax + value3 + tip/numPeople);
+        } else {
+            total3.text = "$" + String(0.00);
         }
         
         if value4 != 0.0 {
             total4.text = "$" + String(format: "%.2f", Double(value4/total) * totalTax + value4 + tip/numPeople);
+        } else {
+            total4.text = "$" + String(0.00);
         }
         
         if value5 != 0.0 {
             total5.text = "$" + String(format: "%.2f", Double(value5/total) * totalTax + value5 + tip/numPeople);
+        } else {
+            total5.text = "$" + String(0.00);
         }
         
         if value6 != 0.0 {
             total6.text = "$" + String(format: "%.2f", Double(value6/total) * totalTax + value6 + tip/numPeople);
+        } else {
+            total6.text = "$" + String(0.00);
         }
         
         if value7 != 0.0 {
             total7.text = "$" + String(format: "%.2f", Double(value7/total) * totalTax + value7 + tip/numPeople);
+        } else {
+            total7.text = "$" + String(0.00);
         }
         
         if value8 != 0.0 {
             total8.text = "$" + String(format: "%.2f", Double(value8/total) * totalTax + value8 + tip/numPeople);
+        } else {
+            total8.text = "$" + String(0.00);
         }
     }
     
