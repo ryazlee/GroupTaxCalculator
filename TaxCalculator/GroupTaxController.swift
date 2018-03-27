@@ -23,9 +23,22 @@ class GroupTaxController: UIViewController {
     var value7 = 0.0;
     var value8 = 0.0;
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: (#selector(UIView.endEditing(_:)))))
+        //You can specify your own selector to be send in "myAction"
+        tipAmount.addDoneButtonToKeyboard(myAction:  #selector(self.tipAmount.resignFirstResponder))
+        taxAmount.addDoneButtonToKeyboard(myAction:  #selector(self.tipAmount.resignFirstResponder))
+        amount1.addDoneButtonToKeyboard(myAction:  #selector(self.tipAmount.resignFirstResponder))
+        amount2.addDoneButtonToKeyboard(myAction:  #selector(self.tipAmount.resignFirstResponder))
+        amount3.addDoneButtonToKeyboard(myAction:  #selector(self.tipAmount.resignFirstResponder))
+        amount4.addDoneButtonToKeyboard(myAction:  #selector(self.tipAmount.resignFirstResponder))
+        amount5.addDoneButtonToKeyboard(myAction:  #selector(self.tipAmount.resignFirstResponder))
+        amount6.addDoneButtonToKeyboard(myAction:  #selector(self.tipAmount.resignFirstResponder))
+        amount7.addDoneButtonToKeyboard(myAction:  #selector(self.tipAmount.resignFirstResponder))
+        amount8.addDoneButtonToKeyboard(myAction:  #selector(self.tipAmount.resignFirstResponder))
     }
     
     func dismissKeyboard() {
@@ -212,6 +225,35 @@ class GroupTaxController: UIViewController {
         }
     }
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        moveTextField(textField, moveDistance: -250, up: true)
+    }
+    
+    // Finish Editing The Text Field
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        moveTextField(textField, moveDistance: -250, up: false)
+    }
+    
+    // Hide the keyboard when the return key pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    // Move the text field in a pretty animation!
+    func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
+        let moveDuration = 0.3
+        let movement: CGFloat = CGFloat(up ? moveDistance : -moveDistance)
+        
+        UIView.beginAnimations("animateTextField", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(moveDuration)
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
+        UIView.commitAnimations()
+    }
+    
+    
+    
     @IBOutlet weak var tipAmount: UITextField!
     @IBOutlet weak var taxAmount: UITextField!
     @IBOutlet weak var amount1: UITextField!
@@ -234,6 +276,5 @@ class GroupTaxController: UIViewController {
     @IBOutlet weak var total8: UILabel!
     @IBOutlet weak var taxDisplay: UILabel!
     @IBOutlet weak var tipDisplay: UILabel!
-    
     
 }
