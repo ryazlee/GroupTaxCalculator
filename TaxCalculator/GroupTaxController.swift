@@ -49,6 +49,7 @@ class GroupTaxController: UIViewController {
     }
     
     @IBAction func calculate(_ sender: Any) {
+        
         total = 0.0;
         numPeople = 0.0;
         totalTax = 0.0;
@@ -139,6 +140,7 @@ class GroupTaxController: UIViewController {
             let temp = Double(value);
             if temp != nil {
                 tax = temp!/100;
+                taxDisplay.text = "Tax Total: $" + String(format: "%.2f", total * tax)
             }
         }
         
@@ -146,6 +148,7 @@ class GroupTaxController: UIViewController {
             let temp = Double(value);
             if temp != nil {
                 tip = total * temp!/100;
+                tipDisplay.text = "Tip Total: $" + String(format: "%.2f", tip)
             }
         }
         
@@ -229,6 +232,8 @@ class GroupTaxController: UIViewController {
     @IBOutlet weak var total6: UILabel!
     @IBOutlet weak var total7: UILabel!
     @IBOutlet weak var total8: UILabel!
+    @IBOutlet weak var taxDisplay: UILabel!
+    @IBOutlet weak var tipDisplay: UILabel!
     
     
 }

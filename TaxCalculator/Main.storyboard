@@ -431,11 +431,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Group Tax Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eq3-jS-e0u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Group Payment Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eq3-jS-e0u">
                                 <rect key="frame" x="0.0" y="20" width="375" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="29"/>
                                 <color key="textColor" red="1" green="0.33828856400000001" blue="0.30324493279999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="set-bA-S96" userLabel="taxDisplay">
+                                <rect key="frame" x="32" y="571" width="137" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vT-Ee-7jI" userLabel="tipDisplay">
+                                <rect key="frame" x="192" y="571" width="137" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -453,7 +467,9 @@
                         <outlet property="amount7" destination="yMO-Vq-eUi" id="Wjr-a2-0r3"/>
                         <outlet property="amount8" destination="P32-dK-wOj" id="LPj-nk-JIW"/>
                         <outlet property="taxAmount" destination="nF0-QP-UDY" id="Adr-vF-jSJ"/>
+                        <outlet property="taxDisplay" destination="set-bA-S96" id="XM6-sp-VrN"/>
                         <outlet property="tipAmount" destination="Yin-kx-WuY" id="BkE-uP-uBM"/>
+                        <outlet property="tipDisplay" destination="0vT-Ee-7jI" id="Fe6-QH-kCw"/>
                         <outlet property="total1" destination="6Gu-nQ-sKV" id="TGg-Dq-x3h"/>
                         <outlet property="total2" destination="aGg-Vk-LZi" id="LiH-ge-C3c"/>
                         <outlet property="total3" destination="HdP-c9-C9f" id="cUl-f5-xVf"/>
@@ -518,6 +534,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Bsl-rC-Rlu"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="Wff-cy-Z9L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n2j-k9-79B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -529,7 +546,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Fic-TG-GD0"/>
-        <segue reference="nya-u0-hAU"/>
+        <segue reference="7Ah-WQ-8Uc"/>
         <segue reference="wx9-p0-gtA"/>
     </inferredMetricsTieBreakers>
 </document>
