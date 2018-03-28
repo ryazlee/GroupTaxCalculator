@@ -51,6 +51,86 @@ class GroupTaxController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func beginEditText1(_ sender: Any) {
+        moveTextField(amount1, moveDistance: -250, up: true)
+    }
+    
+    @IBAction func endEditText1(_ sender: Any) {
+        moveTextField(amount1, moveDistance: -250, up: false)
+    }
+    
+    @IBAction func beginEditText2(_ sender: Any) {
+        moveTextField(amount2, moveDistance: -250, up: true)
+    }
+    
+    @IBAction func endEditText2(_ sender: Any) {
+        moveTextField(amount2, moveDistance: -250, up: false)
+    }
+    
+    @IBAction func beginEditText3(_ sender: Any) {
+        moveTextField(amount3, moveDistance: -250, up: true)
+    }
+    
+    @IBAction func endEditText3(_ sender: Any) {
+        moveTextField(amount3, moveDistance: -250, up: false)
+    }
+    
+    @IBAction func beginEditText4(_ sender: Any) {
+        moveTextField(amount4, moveDistance: -250, up: true)
+    }
+    
+    @IBAction func endEditText4(_ sender: Any) {
+        moveTextField(amount4, moveDistance: -250, up: false)
+    }
+    
+    @IBAction func beginEditText5(_ sender: Any) {
+        moveTextField(amount5, moveDistance: -250, up: true)
+    }
+    
+    @IBAction func endEditText5(_ sender: Any) {
+        moveTextField(amount5, moveDistance: -250, up: false)
+    }
+    
+    @IBAction func beginEditText6(_ sender: Any) {
+        moveTextField(amount6, moveDistance: -250, up: true)
+    }
+    
+    @IBAction func endEditText6(_ sender: Any) {
+        moveTextField(amount6, moveDistance: -250, up: false)
+    }
+    
+    @IBAction func beginEditText7(_ sender: Any) {
+        moveTextField(amount7, moveDistance: -250, up: true)
+    }
+    
+    @IBAction func endEditText7(_ sender: Any) {
+        moveTextField(amount7, moveDistance: -250, up: false)
+    }
+    
+    @IBAction func beginEditText8(_ sender: Any) {
+        moveTextField(amount8, moveDistance: -250, up: true)
+    }
+    
+    @IBAction func endEditText8(_ sender: Any) {
+        moveTextField(amount8, moveDistance: -250, up: false)
+    }
+    
+    @IBAction func beginEditTax(_ sender: Any) {
+        moveTextField(taxAmount, moveDistance: -250, up: true)
+    }
+    
+    @IBAction func endEditTax(_ sender: Any) {
+        moveTextField(taxAmount, moveDistance: -250, up: false)
+    }
+    
+    @IBAction func beginEditTip(_ sender: Any) {
+        moveTextField(tipAmount, moveDistance: -250, up: true)
+    }
+    
+    @IBAction func endEditTip(_ sender: Any) {
+        moveTextField(tipAmount, moveDistance: -250, up: false)
+    }
+    
     @IBAction func tipChanged(_ sender: Any) {
         total = 0.0;
         tip = 0.0;
@@ -225,20 +305,7 @@ class GroupTaxController: UIViewController {
         }
     }
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        moveTextField(textField, moveDistance: -250, up: true)
-    }
     
-    // Finish Editing The Text Field
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        moveTextField(textField, moveDistance: -250, up: false)
-    }
-    
-    // Hide the keyboard when the return key pressed
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
     
     // Move the text field in a pretty animation!
     func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
@@ -251,7 +318,6 @@ class GroupTaxController: UIViewController {
         self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
         UIView.commitAnimations()
     }
-    
     
     
     @IBOutlet weak var tipAmount: UITextField!

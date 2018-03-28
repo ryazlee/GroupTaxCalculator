@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "0ad17f54872656799c9490467527c1a9"
+build_time: [1522173742, 429009000]
+inputs:
+  "/Users/ryan/Documents/projects/GroupTaxCalculator/TaxCalculator/GroupTaxController.swift": [1522172922, 0]
+  "/Users/ryan/Documents/projects/GroupTaxCalculator/TaxCalculator/ViewController.swift": [1521756110, 0]
+  "/Users/ryan/Documents/projects/GroupTaxCalculator/TaxCalculator/AppDelegate.swift": [1522144382, 0]

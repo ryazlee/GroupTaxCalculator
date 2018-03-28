@@ -252,9 +252,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
-                                <connections>
-                                    <action selector="amount3:" destination="ubS-2i-Br4" eventType="editingDidEnd" id="D5N-fy-pq8"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name 4!" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Idy-fa-nQt" userLabel="Name4">
                                 <rect key="frame" x="16" y="291" width="74" height="30"/>
@@ -297,6 +294,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="beginEditText6:" destination="G8p-ob-g10" eventType="editingDidBegin" id="df3-D5-i9e"/>
+                                    <action selector="endEditText6:" destination="G8p-ob-g10" eventType="editingDidEnd" id="XEv-BC-0O1"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name 7!" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="9wT-S4-uID" userLabel="Name7">
                                 <rect key="frame" x="15" y="406" width="74" height="30"/>
@@ -311,6 +312,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="beginEditText7:" destination="G8p-ob-g10" eventType="editingDidBegin" id="q2V-8w-v8B"/>
+                                    <action selector="endEditText7:" destination="G8p-ob-g10" eventType="editingDidEnd" id="fhZ-jg-atc"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name 8!" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="q27-yn-5ka" userLabel="Name8">
                                 <rect key="frame" x="15" y="442" width="74" height="30"/>
@@ -325,6 +330,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="beginEditText8:" destination="G8p-ob-g10" eventType="editingDidBegin" id="rwJ-o5-9Y0"/>
+                                    <action selector="endEditText8:" destination="G8p-ob-g10" eventType="editingDidEnd" id="bmz-LU-G3d"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gu-nQ-sKV" userLabel="Label1">
                                 <rect key="frame" x="260" y="179" width="99" height="30"/>
@@ -399,34 +408,38 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yin-kx-WuY" userLabel="TaxText">
-                                <rect key="frame" x="85" y="568" width="84" height="30"/>
+                                <rect key="frame" x="79" y="547" width="84" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
                                 <connections>
+                                    <action selector="beginEditTip:" destination="G8p-ob-g10" eventType="editingDidBegin" id="x8q-8K-gAY"/>
+                                    <action selector="endEditTip:" destination="G8p-ob-g10" eventType="editingDidEnd" id="tCi-Hh-j2s"/>
                                     <action selector="tipChanged:" destination="G8p-ob-g10" eventType="editingChanged" id="vVt-Sy-7gr"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip %:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WM5-UR-fRc" userLabel="Tip">
-                                <rect key="frame" x="32" y="572" width="47" height="21"/>
+                                <rect key="frame" x="26" y="551" width="47" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nF0-QP-UDY" userLabel="TaxText">
-                                <rect key="frame" x="85" y="522" width="84" height="30"/>
+                                <rect key="frame" x="79" y="501" width="84" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
                                 <connections>
+                                    <action selector="beginEditTax:" destination="G8p-ob-g10" eventType="editingDidBegin" id="dRb-ID-UZx"/>
+                                    <action selector="endEditTax:" destination="G8p-ob-g10" eventType="editingDidEnd" id="ywy-rA-0dC"/>
                                     <action selector="taxChanged:" destination="G8p-ob-g10" eventType="editingChanged" id="uIw-ei-n9Z"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tax %:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTg-AH-GrK" userLabel="Tax">
-                                <rect key="frame" x="32" y="526" width="49" height="21"/>
+                                <rect key="frame" x="26" y="505" width="49" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -440,14 +453,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="set-bA-S96" userLabel="taxDisplay">
-                                <rect key="frame" x="192" y="527" width="164" height="21"/>
+                                <rect key="frame" x="186" y="506" width="164" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vT-Ee-7jI" userLabel="tipDisplay">
-                                <rect key="frame" x="192" y="573" width="164" height="21"/>
+                                <rect key="frame" x="186" y="552" width="164" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -483,7 +496,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXt-di-Ohs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="ubS-2i-Br4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="760.79999999999995" y="33.733133433283363"/>
         </scene>
@@ -499,15 +511,15 @@
                                 <rect key="frame" x="49" y="162" width="277" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Press anywhere to continue..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSz-eS-YoW">
-                                <rect key="frame" x="16" y="539" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Press anywhere to continue..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSz-eS-YoW">
+                                <rect key="frame" x="16" y="491" width="343" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.9392203691709845" green="0.9392203691709845" blue="0.9392203691709845" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6dW-Tp-mZO"/>
                         <connections>
@@ -597,7 +609,7 @@ Designed By: Joyce Li </string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Fic-TG-GD0"/>
-        <segue reference="nya-u0-hAU"/>
+        <segue reference="8b5-su-w8v"/>
         <segue reference="wx9-p0-gtA"/>
     </inferredMetricsTieBreakers>
 </document>
