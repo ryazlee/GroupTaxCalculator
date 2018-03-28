@@ -581,14 +581,16 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaZ-xU-Ba6">
-                                <rect key="frame" x="2" y="227" width="371" height="176"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaZ-xU-Ba6">
+                                <rect key="frame" x="0.0" y="257" width="371" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.34999999999999998" y="0.0" width="1" height="1"/>
                                 <string key="text">Coded By: Ryan Lee 
 
-Designed By: Joyce Li </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+Designed By: Joyce Li 
+
+3.28.18</string>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="17" height="-1"/>
@@ -609,7 +611,7 @@ Designed By: Joyce Li </string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xjs-fK-aFs"/>
-        <segue reference="nya-u0-hAU"/>
+        <segue reference="8b5-su-w8v"/>
         <segue reference="W2D-kb-5h9"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,0 +1,6 @@
+framework module Pods_GroupPaymentCalculatorUITests {
+  umbrella header "Pods-GroupPaymentCalculatorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

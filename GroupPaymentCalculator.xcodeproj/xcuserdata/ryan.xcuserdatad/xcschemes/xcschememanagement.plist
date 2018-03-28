@@ -7,7 +7,7 @@
 		<key>GroupPaymentCalculator.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
 		</dict>
 		<key>TaxCalculator.xcscheme</key>
 		<dict>

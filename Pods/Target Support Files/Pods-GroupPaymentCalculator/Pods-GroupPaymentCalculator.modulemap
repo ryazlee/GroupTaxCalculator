@@ -1,0 +1,6 @@
+framework module Pods_GroupPaymentCalculator {
+  umbrella header "Pods-GroupPaymentCalculator-umbrella.h"
+
+  export *
+  module * { export * }
+}
